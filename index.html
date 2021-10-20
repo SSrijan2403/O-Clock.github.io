@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Clock</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="hamburgur">
+        <nav class="navbar">
+            <div class="icon" onclick="openbar()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+            <ul class="nav-con">
+                <li class="con"><a href="#">Home</a></li>
+                <li class="con"><a href="#current-time">Current Time</a></li>
+                <li class="con"><a href="#world-times">World Time</a></li>
+                <li class="con"><a href="#tools">Tools</a></li>
+                <li class="con"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>O'Clock</h1>
+    <div class="home">
+        Stay
+        <div class="tuned">
+            Tuned
+        </div>
+    </div>
+    <div class="current-time" id="current-time">
+        You're visiting this site at <span id="time"></span>
+    </div>
+    <div class="world" id="world-times">
+        <div class="world-time">
+            <i>Alaska</i>
+            <span id="atime"></span>
+        </div>
+        <div class="world-time">
+            <i>Berlin</i>
+            <span id="btime"></span>
+        </div>
+        <div class="world-time">
+            <i>Canada</i>
+            <span id="ctime"></span>
+        </div>
+        <div class="world-time">
+            <i>Denmark</i>
+            <span id="dtime"></span>
+        </div>
+        <div class="world-time">
+            <i>London</i>
+            <span id="ltime"></span>
+        </div>
+        <div class="world-time">
+            <i>Florida</i>
+            <span id="ftime"></span>
+        </div>
+        <div class="world-time">
+            <i>Greece</i>
+            <span id="gtime"></span>
+        </div>
+        <div class="world-time">
+            <i>Hong Kong</i>
+            <span id="htime"></span>
+        </div>
+        <div class="world-time">
+            <i>Italy</i>
+            <span id="itime"></span>
+        </div>
+        <div class="world-time">
+            <i>Jakarta</i>
+            <span id="jtime"></span>
+        </div>
+        <div class="world-time">
+            <i>Switzerland</i>
+            <span id="stime"></span>
+        </div>
+        <div class="world-time">
+            <i>Melbourne</i>
+            <span id="mtime"></span>
+        </div>
+    </div>
+    <div class="stopwatch" id="tools">
+        <div id="display">
+            00:00:00
+        </div>
+        <div class="buttons">
+            <button id="start" onclick="start()">
+                Start
+            </button>
+            <button id="pause" onclick="pause()">
+                Pause
+            </button>
+            <button id="stop" onclick="stop()">
+                Reset
+            </button>
+        </div>
+    </div>
+    <div class="todo">
+        <div class="todotitle">ToDo List</div>
+        <div class="feed">
+        <div class="title">
+            Title
+        </div>
+        <div class="input">
+            <input type="text" id="input" onfocus="this.value=''">
+        </div>
+        <div class="title">
+            Description
+        </div>
+        <div class="desc">
+            <textarea name="description" id="desc" cols="30" rows="10" onfocus="this.value=''"></textarea>
+        </div>
+        <div class="add">
+            <button id="add">Add</button>
+        </div>
+    </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td scope="row"></td>
+                    <td></td>
+                    <td></td>
+                    <th><button id="del"></button></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
